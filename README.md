@@ -9,6 +9,13 @@ MySQL Storage engine conversion
 
 ​		注意：当对表进行引擎转换时，建议业务停止访问或者极少量访问时进行。
 
+## **原理**
+
+​		CTAS模式会创建一个新表，然后把业务表数据insert到新表中。
+
+​		ALTER是直接对业务表执行alter字句来进行转换。
+
+
 
 
 ## **GO版本要求**
@@ -356,6 +363,7 @@ Database table information statistics:
 ```
 
 
+
 ## 参数说明
 1. #### 参数帮助信息
 
@@ -404,4 +412,3 @@ Database table information statistics:
 >  r    Reload transformation engine table
 >  h    Output command information
 > ```
-
