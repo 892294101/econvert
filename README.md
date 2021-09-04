@@ -133,7 +133,7 @@ MySQL Storage engine conversion
 -cdb ucds \
 -fromengine myisam \
 -toengine innodb \
--convert no \
+-convert yes \
 -clean yes \
 -table test01
 ```
@@ -149,7 +149,7 @@ MySQL Storage engine conversion
 -cdb ucds \
 -fromengine myisam \
 -toengine innodb \
--convert no \
+-convert yes \
 -clean yes \
 -exclude test02
 ```
@@ -165,7 +165,7 @@ MySQL Storage engine conversion
 -cdb ucds \
 -fromengine myisam \
 -toengine innodb \
--convert no \
+-convert yes \
 -clean yes \
 -exclude test02
 -size 0
@@ -182,7 +182,7 @@ MySQL Storage engine conversion
 -cdb ucds \
 -fromengine myisam \
 -toengine innodb \
--convert no \
+-convert yes \
 -clean yes \
 -method alter \
 -errcount 3
